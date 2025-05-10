@@ -1,0 +1,176 @@
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #fff;
+  color: #000;
+  transition: background 0.5s, color 0.5s;
+}
+
+/* Grid layout for sections */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Headings */
+h1 {
+  color: #007BFF;
+}
+
+h2 {
+  color: #0056b3;
+}
+
+/* Section containers */
+section {
+  margin-bottom: 30px;
+  padding: 15px;
+  border-left: 6px solid #007BFF;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.1);
+  transition: background-color 0.5s, transform 0.3s;
+}
+
+section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.15);
+}
+
+/* Cards and boxes */
+.feedback-card,
+.entry {
+  background: #e7f1ff;
+  padding: 10px;
+  margin-top: 10px;
+  border-left: 4px solid #007BFF;
+  border-radius: 5px;
+}
+
+/* Ensures the image stays at 100px width and maintains aspect ratio */
+#lightbulb {
+  width: 100px;
+  height: auto;  /* Maintains the aspect ratio */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Button styling */
+button {
+  padding: 8px 14px;
+  margin-top: 10px;
+  background: linear-gradient(145deg, #007BFF, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 123, 255, 0.3);
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #004999;
+}
+
+/* Inputs */
+input[type="number"],
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  padding: 6px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 200px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+/* Color box */
+#colorBox {
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+  margin-top: 10px;
+}
+
+/* Clock display */
+#clock {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Sample text preview */
+.hold {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #eaeaea;
+  border-radius: 6px;
+}
+
+/* DARK MODE STYLING */
+body.dark {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/001/401/677/non_2x/abstract-polygonal-shape-black-background-free-vector.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+body.dark section {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-left: 6px solid #3399ff;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark h1 {
+  color: #66b3ff;
+}
+
+body.dark h2 {
+  color: #88cfff;
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+body.dark .feedback-card,
+body.dark .entry,
+body.dark .hold {
+  background-color: rgba(0, 123, 255, 0.2);
+  border-left: 4px solid #3399ff;
+}
+
+body.dark button {
+  background: linear-gradient(145deg, #222, #111);
+  color: white;
+  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.1);
+}
+
+body.dark button:hover {
+  background-color: #444;
+}
+
+/* Optional alternative class for toggled dark mode */
+.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode section {
+  background-color: #1e1e1e;
+  border-color: #444;
+}
+
+.dark-mode .feedback-card,
+.dark-mode .entry {
+  background-color: #2c2c2c;
+  color: white;
+}
